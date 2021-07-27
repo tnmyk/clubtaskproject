@@ -13,10 +13,16 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+hr{
+  background-color:rgba(116, 29, 238, 0.157);
+  border-color: transparent;
+}
 main {
   width: 85%;
   margin: 0 auto;
+}
+h1,h2,h3,h4,h5{
+  color: var(--main-text);
 }
 .front-page {
   height: 100vh;
@@ -60,6 +66,7 @@ nav {
   display: flex;
   align-items: center;
   width: max-content;
+  cursor: pointer;
 }
 .request-demo-btn {
   color: var(--main-text);
@@ -97,41 +104,42 @@ nav {
   bottom: 3rem;
 }
 
-.intro-learn-more-btn{
-  background-color: #9C69E2;
+.intro-learn-more-btn {
+  background-color: #9c69e2;
   color: white;
   font-weight: 500;
   font-size: 0.9rem;
   padding: 1rem 2rem;
   margin-left: 2rem;
 }
-.second-container{
+.second-container {
   width: 83%;
-  height: 30rem;
+  height: 28rem;
   margin: 0 auto;
   background-color: rgba(240, 99, 184, 0.15);
   border-radius: 40px;
   display: flex;
+  margin-top: 8rem;
   margin-bottom: 8rem;
 }
-.second-container-image-container{
+.second-container-image-container {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-right: 3rem;
 }
-.second-container-text{
+.second-container-text {
   width: 50%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.second-container-text h1{
+.second-container-text h1 {
   color: var(--main-text);
   margin-bottom: 2.1rem;
 }
-.second-container-text p{
+.second-container-text p {
   width: 84%;
   color: var(--gray);
   font-weight: 500;
@@ -139,16 +147,16 @@ nav {
   line-height: 1.4rem;
 }
 
-.third-container{
+.third-container {
   width: 100%;
   margin-bottom: 8rem;
 }
-.third-container h1{
+.third-container h1 {
   width: max-content;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
-.third-container p{
+.third-container p {
   width: 43%;
   text-align: center;
   margin: 0 auto;
@@ -156,49 +164,48 @@ nav {
   font-weight: 500;
   color: var(--gray);
   line-height: 1.5rem;
-  margin-bottom:4rem;
+  margin-bottom: 4rem;
 }
-.features-grid{
+.features-grid {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap:3rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
-.feature{
+.feature {
   display: flex;
-  /* border: 1px solid black; */
-  height: 19rem;
+  height: 18rem;
   position: relative;
   justify-content: space-between;
 }
-.feature-text{
-  width: 50%;
+.feature-text {
+  width: 51%;
 }
-.feature-title{
+.feature-title {
   margin-top: 3rem;
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--main-text);
 }
-.feature-icon{
+.feature-icon {
   height: 100%;
   display: flex;
   align-items: center;
- 
 }
-.feature-text p{
+.feature-text p {
   text-align: left;
   width: 100%;
   margin-top: 2rem;
   margin-left: 0;
   margin-bottom: 0rem;
-  font-size: 0.75rem;
+  margin-right: 0;
+  font-size: 0.7rem;
   width: 80%;
-  line-height: 1.4rem;
-
+  line-height: 1.3rem;
+  font-weight: 400;
 }
-.feature-learn-more{
+.feature-learn-more {
   display: flex;
   align-items: center;
   position: absolute;
@@ -206,13 +213,196 @@ nav {
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--main-text);
+  cursor: pointer;
 }
 
-.fourth-container {
-  background-color:#9C69E2;
-  height: 38rem;
+.testimonials {
+  background-color: #9c69e2;
+  height: 35rem;
   padding: 6rem 5rem;
+  display: block;
+  position: relative;
+  margin-bottom: 8rem;
 }
-.fourth-container h1{
-  color:white;
+.testimonials h1 {
+  color: white;
+  margin-bottom: 4rem;
+  width: 100%;
+}
+.testimonials-container {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  border-radius: 15px;
+}
+.testimonials-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.testimonial {
+  margin-right: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 15px 0 0 rgba(0, 0, 0, 0.116);
+  min-width: 20rem;
+  width: max-content;
+  height: 16rem;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 3rem;
+}
+
+.testimonial-image-container {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  border: 1px solid rgb(187, 187, 187);
+  margin: 0 2rem;
+}
+.testimonial-text h5{
+  margin-top: 1rem;
+}
+.testimonial-link {
+  font-size: 0.65rem;
+  color: #9c69e2;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+.testimonial-para {
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  max-width: 18rem;
+  color: var(--gray);
+  max-height: 6rem;
+}
+.testimonials-arrows {
+  position: absolute;
+  right: 3rem;
+  bottom: 2rem;
+}
+.testimonials-arrows * {
+  font-size: 1.8rem;
+  color: white;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.dots {
+  display: inline-flex;
+  width: max-content;
+}
+.dots * {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 0.7rem;
+  transition: 0.5s;
+}
+
+.out{
+  min-height: 100vh;  /*remove*/
+  padding: 5rem;
+}
+.out-first{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.out-first h1{
+  color: var(--main-text);
+}
+.out-first p{
+  color: var(--gray);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.out-first-btn-1{
+  background-color:#F063B8 ;
+  color: white;
+  font-weight: 500;
+  margin-right: 1rem;
+  padding: 1rem 2rem;
+  height: max-content;
+}
+.out-first-btn-2{
+  padding: 0.6rem 1rem;
+  height: max-content;
+  font-size: 0.8rem;
+  font-weight: 00;
+}
+.out-first-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.out-second{
+  margin-top: 8rem;
+  display: flex;
+}
+.second-about{
+  width: 43%;
+}
+.second-center{
+  width: 20%;
+  /* line-height: 1.9rem; */
+}
+.second-social{
+  line-height: 1.9rem;
+
+}
+.second-center h5{
+  margin-bottom: 1.7rem;
+}
+.second-center p{
+  color: var(--main-text);
+  font-size: 0.8rem;
+  /* background: red; */
+  margin-bottom: 1rem;
+  width: max-content;
+  cursor: pointer;
+}
+.about-address{
+  font-weight: 500;
+}
+.about-contact{
+  font-size: 0.8rem;
+  color: var(--main-text);
+  line-height: 1.5rem;
+}
+
+.social-icon{
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  cursor: pointer;
+}
+
+.out-third{
+  margin-top: 4rem;
+  color: var(--main-text);
+  font-size: 0.6rem;
+  line-height: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-btn{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color:#9b69e23f ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
