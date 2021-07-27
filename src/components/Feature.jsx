@@ -16,7 +16,7 @@ const Feature = ({ title, snippet, index }) => {
       <div className="feature-text">
         <div className="feature-title">{title}</div>
         <p>{snippet}</p>
-        <span class='feature-learn-more'>
+        <span className='feature-learn-more'>
           Learn more{" "}
           <BsArrowRight
             style={{

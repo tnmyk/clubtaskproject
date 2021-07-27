@@ -12,7 +12,7 @@ const Features = () => {
       <div className="features-grid">
         {features.map((feat, index) => {
           return (
-            <Feature title={feat.title} snippet={feat.snippet} index={index} />
+            <Feature key={index} title={feat.title} snippet={feat.snippet} index={index} />
           );
         })}
       </div>

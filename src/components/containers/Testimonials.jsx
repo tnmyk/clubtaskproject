@@ -27,6 +27,7 @@ const Testimonials = () => {
         {testimonials.map((test, index) => {
           return (
             <Testimonial
+            key={index}
               name={test.name}
               about={test.about}
               body={test.body}
@@ -38,7 +39,7 @@ const Testimonials = () => {
       <div className="dots">
         {testimonials.map((test, index) => {
           return (
-            <span
+            <span key={index}
               style={
                 currentTestimonial === index
                   ? { backgroundColor: "#F063B8", transform: "scale(2)" }

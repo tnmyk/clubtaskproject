@@ -14,6 +14,11 @@ const testimonials = [
     about: "Web Designer",
     body: "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
   },
+  {
+    name: "William",
+    about: "Web Designer",
+    body: "Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.",
+  },
 ];
 
 export default testimonials

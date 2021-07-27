@@ -2,15 +2,17 @@ import {BsArrowRight} from 'react-icons/bs'
 const Navbar = () => {
     return (
       <nav>
-        <div class="nav-left">
-          <img src="./images/Logo.svg" alt="" height="60%" />
+        <div className="nav-left">
+          <a href="/">
+            <img src="./images/Logo.svg" alt="" height="27rem" />
+          </a>
           <div className="nav-links">
-            <a href="#" style={{ fontWeight: 700, color: "#212353" }}>
+            <a href="/" style={{ fontWeight: 700, color: "#212353" }}>
               About
             </a>
-            <a href="#">Help</a>
-            <a href="#">Features</a>
-            <a href="#">Signup</a>
+            <a href="/">Help</a>
+            <a href="/">Features</a>
+            <a href="/">Signup</a>
           </div>
         </div>
         <div className="request-demo-btn btn">
