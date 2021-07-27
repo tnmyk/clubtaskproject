@@ -2,7 +2,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const Outro = () => {
   return (
-    <main>
+    <main style={{width:'85%'}}>
       <div className="out">
         <div className="out-first">
           <div>
